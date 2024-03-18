@@ -1,0 +1,16 @@
+.title {
+    color: black;
+    font-size: 25px;
+
+}
+
+.container {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+   title {
+    color: red;
+   }
+}
+ @media only  screen and (max-width | min-width: .....) 

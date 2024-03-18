@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semi Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="showCreateProductForm()" id="add-product-button">
+        Create Product
+      </button>
+      <div class="content">
+        <!-- Product List -->
+      </div>
+    </div>
+    <div class="create-form">
+      <form onsubmit="handleAddProduct(event)">
+        <div>
+          Name:
+          <input
+            id="product-name"
+            type="text"
+            placeholder="enter product name"
+          />
+        </div>
+        <div>
+          Type:
+          <input
+            id="product-type"
+            type="text"
+            placeholder="enter product type"
+          />
+        </div>
+        <div>
+          Price:
+          <input id="product-price" type="number" placeholder="enter price" />
+        </div>
+        <div>
+          Image:
+          <input id="product-image" type="text" placeholder="enter image url" />
+        </div>
+        <div>
+          Is Used:
+          <input id="is-used" type="checkbox" placeholder="enter image url" />
+        </div>
+        <div>
+          Count In Stock:
+          <input
+            id="count-in-stock"
+            type="number"
+            placeholder="enter image url"
+          />
+        </div>
+        <div>
+          Discount (%):
+          <input id="discount" type="number" placeholder="enter image url" />
+        </div>
+        <div class="produc-form-actions">
+          <button onclick="handleCancelAdd()">Cancel</button>
+          <button type="submit">Create</button>
+        </div>
+      </form>
+    </div>
+    <div class="edit-form"></div>
+    <div class="detail-modal"></div>
+    <script src="./main.js" />
+  </body>
+</html>

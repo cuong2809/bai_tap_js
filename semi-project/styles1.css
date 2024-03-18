@@ -1,0 +1,23 @@
+.create-form {
+    display: none;
+}
+  
+.product-card {
+    border: 1px solid rgb(14, 216, 14);
+    width: 250px;
+    padding: 15px;
+}
+  
+.product-image {
+    height: 200px;
+    width: 100%;
+}
+  
+.product-index {
+    text-align: center;
+}
+  
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
